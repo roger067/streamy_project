@@ -4,12 +4,12 @@ import { Field, reduxForm } from 'redux-form';
 class streamCreate extends React.Component {
 
     renderError({ touched, error }) {
-        if(touched && error){
+        if (touched && error) {
             return <div className="invalid-feedback">{error}</div>
         }
     }
 
-    renderInput = ({ input, type, placeholder, meta }) => { 
+    renderInput = ({ input, type, placeholder, meta }) => {
         const classInput = `form-control ${meta.touched && meta.error ? 'is-invalid' : ''}`
         return (
             <div className="form-group">
@@ -25,11 +25,21 @@ class streamCreate extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.props.handleSubmit(this.onSubmit)}>
-                <Field type="text" name="title" component={this.renderInput} placeholder="Título..." />
-                <Field type="text" name="description" component={this.renderInput} placeholder="Descrição..." />
-                <button type="submit" className="btn btn-primary">Enviar</button>
-            </form>
+            <div className="row">
+                <div className="offset-sm-3 col-sm-6">
+                    <div className="card p-3 mt-5">
+                        <h1>Add Stream</h1>
+                        <hr />
+                        <form onSubmit={this.props.handleSubmit(this.onSubmit)}>
+                            <Field type="text" name="title" component={this.renderInput} placeholder="Título..." />
+                            <Field type="text" name="description" component={this.renderInput} placeholder="Descrição..." />
+                            <div className="d-flex justify-content-center">
+                                <button type="submit" className="my-2 w-25 btn btn-lg btn-danger">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         );
     }
 }

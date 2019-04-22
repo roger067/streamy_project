@@ -11,9 +11,9 @@ import NavBar from './Navbar';
 class App extends React.Component {
   render() {
     return (
-        <BrowserRouter>
-          <NavBar />
-          <div className="container">
+      <BrowserRouter>
+        <NavBar />
+        <div className="container">
             <Switch>
               <Route path="/" exact component={streamList} />
               <Route path="/streams/new" exact component={streamCreate} />
@@ -22,8 +22,8 @@ class App extends React.Component {
               <Route path="/streams/show" exact component={streamShow} />
               <Redirect from="*" to="/" />
             </Switch>
-          </div>
-        </BrowserRouter>
+        </div>
+      </BrowserRouter>
     );
   }
 }
