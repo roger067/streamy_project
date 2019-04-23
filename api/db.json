@@ -1,0 +1,24 @@
+{
+  "streams": [
+    {
+      "title": "Stream do Minato",
+      "description": "Gameplay avançada ",
+      "id": 1
+    },
+    {
+      "title": "Stream do Jiló",
+      "description": "Gameplay criminosa",
+      "id": 2
+    },
+    {
+      "title": "Stream Quality",
+      "description": "Essa stream é boa",
+      "id": 3
+    },
+    {
+      "description": "Testando live",
+      "title": "Tshow",
+      "id": 4
+    }
+  ]
+}
