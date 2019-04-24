@@ -1,24 +1,16 @@
 {
   "streams": [
     {
-      "title": "Stream do Minato",
-      "description": "Gameplay avançada ",
+      "title": "My First Stream",
+      "description": "Stream de Qualidade",
+      "userId": "114399056039150745275",
       "id": 1
     },
     {
-      "title": "Stream do Jiló",
-      "description": "Gameplay criminosa",
+      "title": "Another Stream",
+      "description": "Stream da boa!",
+      "userId": "114399056039150745275",
       "id": 2
-    },
-    {
-      "title": "Stream Quality",
-      "description": "Essa stream é boa",
-      "id": 3
-    },
-    {
-      "description": "Testando live",
-      "title": "Tshow",
-      "id": 4
     }
   ]
 }

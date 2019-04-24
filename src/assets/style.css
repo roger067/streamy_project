@@ -1,26 +1,56 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo|Poppins:300,400,600');
-
-.bg-primary{
+.bg-primary {
     background: #242557 !important;
 }
-.bg-danger{
+
+.bg-danger {
     background: #c54357 !important;
 }
-.btn{
+
+.btn {
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
+    transition: .4s;
 }
+
 .btn-danger {
     background: #c54357 !important;
     border: none;
 }
-.navbar{
-    box-shadow: 0px 5px 11px 1px rgba(0,0,0,0.4);
+
+.btn-info {
+    background: #FFF;
+    color: #242557;
+    border: none !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23) !important;
+    border-radius: 0.4rem;
+    padding: 0.8rem 1rem;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active {
+    background: #242557 !important;
+    color: #FFF;
+}
+
+.navbar {
+    box-shadow: 0px 5px 11px 1px rgba(0, 0, 0, 0.4);
     font-family: 'Heebo', sans-serif;
 }
 
+#stream-list h2{
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #242557;
+    margin-bottom: 0;
+}
+#stream-list .divisor {
+    width: 48px;
+    border-top: 3px solid #c54357;
+    margin-top: 0.5rem;
+}
+
 .card {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     border: none;
     border-radius: 0.5rem;
 }
@@ -40,18 +70,58 @@
     margin-bottom: 1.5rem;
 }
 
+.card.card-hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
+    transition: .3s;
+}
+
+.card-header:hover .box-cam {
+    transform: rotate(15deg);
+    transition: .3s;
+}
+
+.card-header {
+    background: #c54357;
+    border-radius: 0.5rem 0.5rem 0 0 !important;
+    cursor: pointer;
+}
+
+.card-title {
+    color: #242557;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+}
+
+.card-text {
+    font-family: 'Heebo', sans-serif;
+    color: #9ba3d4;
+}
+
+.box-cam {
+    transition: .3s;
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 4rem;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
+    color: #c54357;
+    border-radius: 0.5rem;
+}
+
 .form-control {
     padding: 1rem;
     background: #fff;
     color: #9ba3d4;
     border: none;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
 }
-.form-control::placeholder{
+
+.form-control::placeholder {
     color: #51525a;
     font-weight: 600;
 }
 
-.invalid-feedback{
+.invalid-feedback {
     color: #c54357;
 }
